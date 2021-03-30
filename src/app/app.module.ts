@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NewtweetComponent } from './newtweet/newtweet.component';
+import { DisplaytweetsComponent } from './displaytweets/displaytweets.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NewtweetComponent,
+    DisplaytweetsComponent
   ],
   imports: [
     BrowserModule,

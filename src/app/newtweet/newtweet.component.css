@@ -1,0 +1,7 @@
+.tweetcontainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}

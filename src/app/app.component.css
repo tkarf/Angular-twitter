@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.leftSidebar {
+  display: none;
+}
+
+.content {
+  width: 100%;
+}
+
+.rightSidebar {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    padding: 1em;
+    margin-left: 10em;
+    margin-right: 10em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .leftSidebar {
+    width: 20%;
+    display: block;
+  }
+
+  .content {
+    width: 50%;
+  }
+
+  .rightSidebar {
+    width: 20%;
+    display: block;
+  }
+}

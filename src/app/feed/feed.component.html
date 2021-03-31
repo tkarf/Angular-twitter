@@ -1,0 +1,29 @@
+<div>
+    <div class="newtweet">
+        <div class="newtweetcard">
+            <textarea  type="text" placeholder="Vad händer?" name="inputTweet" [(ngModel)]="inputTweet" ></textarea>
+            <button>Tweet</button>
+            <div class="imagebuttons">
+                <mat-icon aria-hidden="false" aria-label="Example home icon">image</mat-icon>
+                <mat-icon aria-hidden="false" aria-label="Example home icon">gif</mat-icon>
+                <mat-icon aria-hidden="false" aria-label="Example home icon">camera_alt</mat-icon>
+            </div>
+        </div>
+      </div>     
+      
+      
+
+    <div class="tweets">
+        <div *ngFor="let tweet of tweets; let i = index;" class="tweet">
+            <div class="row">
+                <div class="avatar"></div>
+                    <div>
+                        <p>Va?</p>
+                        <p class="user">{{tweet.user}}</p>
+                        <p class="username">@{{tweet.username}}</p>
+                    </div>
+            </div>
+            <p class="tweetcontent">{{tweet.content}}</p>
+        </div>
+    </div>    
+</div>

@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Tweets } from '../models/Tweet';
 
 @Component({
-  selector: 'app-displaytweets',
-  templateUrl: './displaytweets.component.html',
-  styleUrls: ['./displaytweets.component.css'],
+  selector: 'app-feed',
+  templateUrl: './feed.component.html',
+  styleUrls: ['./feed.component.css'],
 })
-export class DisplaytweetsComponent implements OnInit {
+export class FeedComponent implements OnInit {
   tweets: Tweets[];
-
+  inputTweet: string = '';
   constructor() {}
 
   ngOnInit(): void {
@@ -26,5 +26,14 @@ export class DisplaytweetsComponent implements OnInit {
         date: 'kolla upp',
       },
     ];
+  }
+
+  postTweet() {
+    this.tweets.push({
+      content: this.inputTweet,
+      user: 'Pro User',
+      username: 'username',
+      date: 'to be added',
+    });
   }
 }

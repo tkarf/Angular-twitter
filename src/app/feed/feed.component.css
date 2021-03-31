@@ -30,6 +30,10 @@
   margin-left: 4em;
 }
 
+.row img {
+  max-width: 10%;
+}
+
 .newtweet {
   padding: 10px 15px;
   background-color: #fff;
@@ -38,6 +42,8 @@
 
 .newtweet textarea {
   width: 100%;
+  font-size: 18px;
+  min-height: 5em;
   border: none;
   border-bottom: 1px solid lightgray;
 }
@@ -60,6 +66,7 @@
   display: flex;
   margin-top: 1em;
   margin-bottom: 2em;
+  color: lightskyblue;
 }
 
 @media only screen and (min-width: 600px) {

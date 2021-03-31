@@ -3,4 +3,5 @@ export class Tweets {
   user: string;
   username: string;
   date: any;
+  imageUrl: string;
 }

@@ -22,9 +22,13 @@ export class FeedComponent implements OnInit {
         user: 'Jack Bauer',
         username: 'jackbauer',
         date: 'Wed Mar 31 2021 15:50:57 GMT+0300 (östeuropeisk sommartid)',
+        profilePic:
+          'https://images.unsplash.com/photo-1457449940276-e8deed18bfff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+
         imageUrl:
           'https://images.unsplash.com/photo-1593642531955-b62e17bdaa9c?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
       },
+
       {
         content:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac nisl suscipit, tempor nunc sit amet, molestie mi. Vestibulum eget purus eget justo tincidunt.',
@@ -32,6 +36,8 @@ export class FeedComponent implements OnInit {
         username: 'angularpro',
         date: 'Wed Mar 31 2021 16:50:57 GMT+0300 (östeuropeisk sommartid)',
         imageUrl: '',
+        profilePic:
+          'https://images.unsplash.com/photo-1457449940276-e8deed18bfff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
       },
       {
         content:
@@ -40,6 +46,8 @@ export class FeedComponent implements OnInit {
         username: 'angularpro',
         date: 'Wed Mar 31 2021 17:50:57 GMT+0300 (östeuropeisk sommartid)',
         imageUrl: '',
+        profilePic:
+          'https://images.unsplash.com/photo-1457449940276-e8deed18bfff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
       },
       {
         content:
@@ -47,6 +55,8 @@ export class FeedComponent implements OnInit {
         user: 'Jack Bauer',
         username: 'jackbauer',
         date: 'Wed Mar 31 2021 12:50:57 GMT+0300 (östeuropeisk sommartid)',
+        profilePic:
+          'https://images.unsplash.com/photo-1457449940276-e8deed18bfff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
         imageUrl:
           'https://images.unsplash.com/photo-1593642531955-b62e17bdaa9c?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
       },
@@ -59,6 +69,8 @@ export class FeedComponent implements OnInit {
       user: 'Pro User',
       username: 'username',
       date: new Date(),
+      profilePic:
+        'https://images.unsplash.com/photo-1457449940276-e8deed18bfff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
       imageUrl:
         'https://images.unsplash.com/photo-1593642531955-b62e17bdaa9c?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     });

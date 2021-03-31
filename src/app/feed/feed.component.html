@@ -23,7 +23,7 @@
     <div class="tweets">   
         <div *ngFor="let tweet of sortData; let i = index;" class="tweet">
             <div class="row">
-                <div class="avatar"></div>
+                <div class="twitterfeedavatar"><img src={{tweet.profilePic}} alt={{tweet.user}}></div>
                     <div class="userinfo">
                         <p class="user">{{tweet.user}}</p>
                         <p class="username">@{{tweet.username}}</p>

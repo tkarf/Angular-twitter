@@ -8,9 +8,10 @@ import { AppComponent } from './app.component';
 import { FeedComponent } from './feed/feed.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SigninComponent } from './signin/signin.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, FeedComponent, SigninComponent],
+  declarations: [AppComponent, FeedComponent, SigninComponent, HomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

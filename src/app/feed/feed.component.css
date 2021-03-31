@@ -1,9 +1,36 @@
+.feedcontainer {
+  background-color: #fafafa;
+}
+
 .tweet {
   border-bottom: 1px solid lightgray;
+  background-color: white;
+  padding: 2em;
 }
 
 .row {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tweet img {
+  width: 90%;
+  height: auto;
+  margin-left: 4em;
+  border-radius: 0.2em;
+}
+
+.buttonrow {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.userinfo {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -22,21 +49,26 @@
 
 .username {
   font-size: 14px;
-  margin-top: -1em;
+  color: gray;
+  margin-right: 0.2em;
+  margin-left: 0.5em;
+}
+.time {
+  font-size: 14px;
   color: gray;
 }
-
 .tweetcontent {
   margin-left: 4em;
 }
 
-.row img {
-  max-width: 10%;
+.newtweetcard {
+  background-color: white;
+  padding: 1em;
 }
 
 .newtweet {
-  padding: 10px 15px;
-  background-color: #fff;
+  background-color: lightgray;
+  margin-bottom: 1em;
   border-bottom: 1px solid #ddd;
 }
 
@@ -49,17 +81,17 @@
 }
 
 .newtweet button {
-  background-color: lightskyblue; /* Green */
+  background-color: lightskyblue;
   border: none;
   color: white;
-  padding: 10px 40px;
+  width: 20%;
+  height: 2.5em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  border-radius: 1.5em;
+  font-size: 14px;
+  border-radius: 4em;
   margin-top: 1em;
-  float: right;
 }
 
 .imagebuttons {
@@ -71,8 +103,11 @@
 
 @media only screen and (min-width: 600px) {
   .newtweet {
-    padding: 10px 15px;
-    background-color: #fff;
+    background-color: #fafafa;
     border-bottom: 1px solid #ddd;
+  }
+  .newtweetcard {
+    background-color: white;
+    padding: 1em;
   }
 }

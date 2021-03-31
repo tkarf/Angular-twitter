@@ -7,9 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FeedComponent } from './feed/feed.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SigninComponent } from './signin/signin.component';
 
 @NgModule({
-  declarations: [AppComponent, FeedComponent],
+  declarations: [AppComponent, FeedComponent, SigninComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

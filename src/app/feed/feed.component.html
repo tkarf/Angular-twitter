@@ -1,29 +1,39 @@
-<div>
+<div class="feedcontainer">
     <div class="newtweet">
         <div class="newtweetcard">
-            <textarea  type="text" placeholder="Vad händer?" name="inputTweet" [(ngModel)]="inputTweet" ></textarea>
-            <button>Tweet</button>
-            <div class="imagebuttons">
-                <mat-icon aria-hidden="false" aria-label="Example home icon">image</mat-icon>
-                <mat-icon aria-hidden="false" aria-label="Example home icon">gif</mat-icon>
-                <mat-icon aria-hidden="false" aria-label="Example home icon">camera_alt</mat-icon>
+            <form (submit)="postTweet()" class="row">
+                <div class="avatar"></div>
+                <textarea  type="text" placeholder="Vad händer?" name="inputTweet" [(ngModel)]="inputTweet" ></textarea>
+                <div class="buttonrow">
+                <div class="imagebuttons">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">image</mat-icon>
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">gif</mat-icon>
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">camera_alt</mat-icon>
+                </div>   
+                <button>Tweet</button>
             </div>
+            </form>     
+            
+           
         </div>
       </div>     
       
       
 
-    <div class="tweets">
-        <div *ngFor="let tweet of tweets; let i = index;" class="tweet">
+    <div class="tweets">   
+        <div *ngFor="let tweet of sortData; let i = index;" class="tweet">
             <div class="row">
                 <div class="avatar"></div>
-                    <div>
+                    <div class="userinfo">
                         <p class="user">{{tweet.user}}</p>
                         <p class="username">@{{tweet.username}}</p>
+                        <p class="time">- {{timeSince(tweet.date)}}</p>
                     </div>
             </div>
             <p class="tweetcontent">{{tweet.content}}</p>
-            <!-- <img src={{tweet.imageUrl}} alt="image"> -->
+        
+            <img *ngIf="tweet.imageUrl" src={{tweet.imageUrl}} alt="image">
+            
         </div>
     </div>    
 </div>

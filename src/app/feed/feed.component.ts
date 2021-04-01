@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Tweets } from '../models/Tweet';
-import { Moment } from 'moment';
 import * as moment from 'moment';
 
 @Component({
@@ -12,6 +11,7 @@ export class FeedComponent implements OnInit {
   tweets: Tweets[];
   inputTweet: string = '';
   timeStamp = new Date();
+  currentUser = 'jackbauer';
   constructor() {}
 
   ngOnInit(): void {
@@ -67,7 +67,7 @@ export class FeedComponent implements OnInit {
     this.tweets.push({
       content: this.inputTweet,
       user: 'Pro User',
-      username: 'username',
+      username: this.currentUser,
       date: new Date(),
       profilePic:
         'https://images.unsplash.com/photo-1457449940276-e8deed18bfff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
@@ -86,5 +86,17 @@ export class FeedComponent implements OnInit {
     return this.tweets.sort((a, b) => {
       return <any>new Date(b.date) - <any>new Date(a.date);
     });
+  }
+
+  updateTweet(index: number, user: string, updateTweet: Tweets) {
+    if (user === this.currentUser) {
+      this.tweets[index] = updateTweet;
+    }
+  }
+
+  deleteTweet(index: number, user: string) {
+    if (user === this.currentUser) {
+      this.tweets.splice(index, 1);
+    }
   }
 }

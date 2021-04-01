@@ -28,6 +28,7 @@
                         <p class="user">{{tweet.user}}</p>
                         <p class="username">@{{tweet.username}}</p>
                         <p class="time">- {{timeSince(tweet.date)}}</p>
+                        <mat-icon class="editbutton" *ngIf="tweet.username === currentUser" aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
                     </div>
             </div>
             <p class="tweetcontent">{{tweet.content}}</p>
@@ -35,5 +36,6 @@
             <img *ngIf="tweet.imageUrl" src={{tweet.imageUrl}} alt="image">
             
         </div>
+        
     </div>    
 </div>

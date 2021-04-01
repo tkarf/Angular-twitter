@@ -13,7 +13,9 @@
   align-items: center;
   flex-wrap: wrap;
 }
-
+.editbutton {
+  margin-left: 5em;
+}
 .tweet img {
   width: 90%;
   height: auto;

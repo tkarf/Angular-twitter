@@ -12,7 +12,6 @@ export class FeedComponent implements OnInit {
   inputTweet: string = '';
   timeStamp = new Date();
   currentUser = 'jackbauer';
-  constructor() {}
 
   ngOnInit(): void {
     this.tweets = [
